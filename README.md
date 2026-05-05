@@ -1,16 +1,34 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built using React and Tailwind CSS to showcase my projects and skills.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React.js
+- Tailwind CSS
+- JavaScript (ES6+)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive design (mobile + desktop)
+- Smooth scrolling navigation
+- Projects showcase section
+- Contact section
+- Clean UI with Tailwind CSS
 
-## Expanding the ESLint configuration
+## About Me
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I am a frontend developer currently learning advanced concepts of React and building projects to improve my skills.
+
+## Contact
+
+- Gmail: itsaishashaikh05@gmail.com
+- LinkedIn: https://linkedin.com/in/aisha-shaikh-098102405
+- Instagram: https://www.instagram.com/aisha_shaikh.dev?igdh=MTE1cnA2dDVhczM2cA==&utm_source=ig_contacr-invite
+
+
+## Future Improvements
+
+- To add animations using Framer Motion/GSAP
+- To add more advanced projects
+- Improve accessibility
