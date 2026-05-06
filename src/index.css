@@ -12,4 +12,62 @@
     font-family: cursive;
     color: #174328;
   }
+
+  .project-card{
+    border: 2px solid #45a269;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 300px;
+  }
+
+  .project-card-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 10px;
+    margin-top: 35px;
+  }
+
+  .tech{
+    background-color: #c8f0cd;
+    color: #1F3D2B;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: 500;
+  }
+
+  .stack{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  a{
+    display: inline-block;
+    margin-right: 8px;
+    color: #174328;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .title{
+    font-weight: 600;
+    font-size: 22px;
+    color: #1F3D2B;
+  }
+
+  .project-image{
+    border-radius: 6px;
+    margin-bottom: 5px;
+  }
 }
