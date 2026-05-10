@@ -8,14 +8,16 @@ import Navbar from '../components/Navbar'
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
+    <>
+    <Navbar />
+    <div className='flex flex-col justify-center items-center'>
       <Home />
       <Projects />
       <Skills />
       <About />
       <Contact />
     </div>
+    </>
   )
 }
 

@@ -24,7 +24,6 @@
   .project-card-div{
     display: flex;
     flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
     gap: 16px;
     padding: 10px;
@@ -69,5 +68,30 @@
   .project-image{
     border-radius: 6px;
     margin-bottom: 5px;
+  }
+
+  .sm-text{
+    font-size: 15px;
+    margin: 2px;
+  }
+
+  .skills-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 20px;
+    border: 2px solid #45a269;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+  }
+
+  .tech-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
   }
 }

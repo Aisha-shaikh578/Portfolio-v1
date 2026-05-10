@@ -12,7 +12,7 @@ const Projects = () => {
         <LineBelow />
       </div>
 
-    <div>
+    <div className='flex flex-col md:flex-row gap-5 md:gap-10 flex-wrap justify-center'>
       {ProjectObj.map((project,idx) => (
         <div key={idx} className='project-card'>
           <img src={project.image} alt={project.name} className='project-image' />
