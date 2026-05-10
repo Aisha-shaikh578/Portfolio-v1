@@ -16,6 +16,7 @@ const Skills = () => {
         <LineBelow />
       </div>
 
+    <div className='flex flex-col md:flex-row md:gap-10'>
       <div className='skills-div'>
         <h2 className='heading font-extrabold text-xl'>
           Frontend
@@ -45,6 +46,7 @@ const Skills = () => {
             <FiGitBranch color='white' className='bg-[#ff5400] rounded-br-xl rounded-bl-2xl rounded-tl-xl rounded-tr-2xl p-1'/><h2 className='sm-text'>Git</h2>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )
