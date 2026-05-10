@@ -25,7 +25,7 @@ const SocialIcons = () => {
   return (
     <div className='flex gap-3 m-2 lg:m-3'>
       {socialLinks.map((link,idx) => (
-        <a className='cursor-pointer text-green-800 hover:scale-110 backdrop-blur-md hover:text-[#0f3d2e] rounded=-full uration-300 transition-all'
+        <a className='cursor-pointer text-green-800 hover:scale-110 hover:text-[#0f3d2e] rounded=-full uration-300 transition-all'
          key={idx} href={link.url}>
           {link.icon}
         </a>
