@@ -26,7 +26,7 @@ const Contact = () => {
  ]
 
   return (
-    <div className='h-screen relative' id='contact'>
+    <div className='h-screen relative w-full mt-5' id='contact'>
       <div className='text-center mb-8 mt-12'>
         <h2 className='text-green-700 font-medium'>Get In Touch</h2>
         <h1 className='text-xl m-1 font-semibold'>Let's Connect</h1>
@@ -46,7 +46,7 @@ const Contact = () => {
       ))}
     </div>
 
-  <div>
+  <div className='absolute bottom-0 lg:-bottom-10 w-full px-10'>
     <Footer />
   </div>
     </div>
