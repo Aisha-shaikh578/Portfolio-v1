@@ -1,9 +1,11 @@
 import { X, Menu, Sun } from 'lucide-react'
 import React, { useState } from 'react'
 import OpenMenu from './OpenMenu';
+import { motion, useScroll } from 'framer-motion';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const {scrollYProgress} = useScroll();
 
   const handleMenuClick = () => {
    setIsMenuOpen(!isMenuOpen);
@@ -12,6 +14,10 @@ const Navbar = () => {
 
   return (
     <>
+    <motion.div 
+    style={{scaleX : scrollYProgress}}
+    className='h-1.5 rounded-r-2xl fixed z-1 w-full origin-left bg-green-600'></motion.div>
+
     <nav className='flex bg-gray-100 justify-between fixed w-full pt-2 px-2 md:px-4 opacity-90'>
       <div>
         <img src="../src/assets/logoLight.png" alt="logo" className='h-10 rounded-3xl'/>
