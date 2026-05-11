@@ -1,8 +1,8 @@
 import { Circle } from 'lucide-react'
 import React from 'react'
 import ReactTypingEffect from 'react-typing-effect'
-import {Prism, Light as SyntaxHighlighter} from 'react-syntax-highlighter'
-import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 const CodeEditor = () => {
 
@@ -19,7 +19,9 @@ const CodeEditor = () => {
         background: '#0F1A14',
         paddingRight: '15px',
         borderBottomLeftRadius: '16px',
-        borderBottomRightRadius: '16px'
+        borderBottomRightRadius: '16px',
+        margin: '0',
+        paddingTop: '0'
       }}>
  {`
  const Developer = () => {
