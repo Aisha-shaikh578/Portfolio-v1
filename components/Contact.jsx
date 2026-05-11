@@ -3,6 +3,7 @@ import LineBelow from './LineBelow'
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
 import Footer from './Footer';
+import QRCode from './QRCode';
 
 const Contact = () => {
  const networkAccount = [
@@ -44,6 +45,10 @@ const Contact = () => {
         </div>
       </a>
       ))}
+    </div>
+
+    <div className='flex justify-center mt-[8vh]'>
+      <QRCode />
     </div>
 
   <div className='absolute bottom-5 w-full px-10'>
