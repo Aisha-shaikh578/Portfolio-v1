@@ -5,7 +5,7 @@ import CodeEditor from './CodeEditor'
 
 const Home = () => {
   return (
-    <div id='home' className='flex flex-col lg:flex-row max-w-xl gap-5 p-4 mt-10 lg:mt-20 lg:mb-15 lg:max-w-4xl'>
+    <div id='home' className='flex flex-col lg:flex-row max-w-xl gap-5 p-4 py-14 lg:py-25 mt-10 lg:mt-20 lg:mb-15 lg:max-w-4xl'>
       <div className='space-y-3 lg:w-2xl'>
         <h3 className='heading'>Hi, I'm</h3>
         <h1 className='name'>Aisha</h1>

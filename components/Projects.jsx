@@ -6,7 +6,7 @@ import LineBelow from './LineBelow'
 const Projects = () => {
   return (
     <div id='projects' className='project-card-div'>
-      <div className='text-center mb-4'>
+      <div className='text-center mb-4 py-4 lg:py-0'>
         <h2 className='text-green-700 font-medium'>My Work</h2>
         <h1 className='text-xl m-1 font-semibold'>Featured Projects</h1>
         <LineBelow />

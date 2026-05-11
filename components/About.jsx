@@ -4,7 +4,7 @@ import myPic from '../src/assets/my-pic.jpg'
 
 const About = () => {
   return (
-    <div id='about'>
+    <div id='about' className='py-12 lg:py-20'>
        <div className='text-center mb-4 mt-12'>
         <h2 className='text-green-700 font-medium'>Who I Am</h2>
         <h1 className='text-xl m-1 font-semibold'>About Me</h1>

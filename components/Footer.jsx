@@ -6,7 +6,7 @@ import { easeInOut, motion } from 'framer-motion'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col md:flex-row md:justify-between mb-10 gap-5 md:mb-5 lg:mb-20 2xl:mb-30 items-center mt-10'>
+    <div className='flex flex-col md:flex-row md:justify-between gap-5 items-center mt-10'>
       <div>
         <img src={logoLight} alt="logo" className='h-10 rounded-3xl'/>
       </div>

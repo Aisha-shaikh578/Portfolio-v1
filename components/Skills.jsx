@@ -9,7 +9,7 @@ import LineBelow from './LineBelow'
 
 const Skills = () => {
   return (
-    <div id='skills'>
+    <div id='skills' className='py-12 lg:py-15'>
       <div className='text-center mb-6 mt-10'>
         <h2 className='text-green-700 font-medium'>What I do</h2>
         <h1 className='text-xl m-1 font-semibold'>Skills & Technologies </h1>
