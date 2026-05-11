@@ -18,7 +18,7 @@ const Navbar = () => {
     style={{scaleX : scrollYProgress}}
     className='h-1.5 rounded-r-2xl fixed z-1 w-full origin-left bg-green-600'></motion.div>
 
-    <nav className='flex bg-gray-100 justify-between fixed w-full pt-2 px-2 md:px-4 opacity-90'>
+    <nav className='flex bg-gray-100 justify-between fixed w-full pt-2 px-2 md:px-4 py-4 items-center opacity-90'>
       <div>
         <img src="../src/assets/logoLight.png" alt="logo" className='h-10 rounded-3xl'/>
       </div>
