@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div>
         <p className='text-green-900 font-semibold text-xs flex gap-1 md:text-md lg:text-lg items-center'>
-          <FaCopyright size={20}/>
+          <FaCopyright size={15}/>
           2026 Aisha Shaikh. All rights reserved.
         </p>
       </div>

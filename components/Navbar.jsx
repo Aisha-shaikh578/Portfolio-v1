@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className='flex bg-gray-100 justify-between pt-2 px-2 md:px-4'>
+    <nav className='flex bg-gray-100 justify-between fixed w-full pt-2 px-2 md:px-4 opacity-90'>
       <div>
         <img src="../src/assets/logoLight.png" alt="logo" className='h-10 rounded-3xl'/>
       </div>

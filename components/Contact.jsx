@@ -49,7 +49,7 @@ const Contact = () => {
   <div className='absolute bottom-0 lg:-bottom-10 w-full px-10'>
     <Footer />
   </div>
-    </div>
+  </div>
   )
 }
 
