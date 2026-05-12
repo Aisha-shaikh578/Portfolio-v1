@@ -15,7 +15,7 @@ const OpenMenu = () => {
       <a href='#contact'>Contact</a>
     
       {theme === 'dark' ?
-      <Sun color='orange' onClick={toggleTheme}/> :
+      <Sun color='#B16406' onClick={toggleTheme}/> :
       <MoonIcon color='orange' onClick={toggleTheme}/>
      }
     </div>

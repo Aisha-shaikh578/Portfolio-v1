@@ -29,7 +29,7 @@ const Navbar = () => {
         <img src={logoLight} alt="logo" className='h-10 rounded-3xl'/>
       </div>
 
-      <div className='space-x-3 hidden lg:flex'>
+      <div className='space-x-3 hidden lg:flex lg:gap-5'>
         <a href='#home'>Home</a>
         <a href='#projects'>Projects</a>
         <a href='#skills'>Skills</a>
@@ -38,7 +38,7 @@ const Navbar = () => {
 
         {
           theme === 'dark' ? 
-          <Sun color='orange' className='cursor-pointer' onClick={toggleTheme}/>: 
+          <Sun color='#B16406' className='cursor-pointer' onClick={toggleTheme}/>: 
           <MoonIcon color='orange' className='cursor-pointer' onClick={toggleTheme}/>
         }
       </div>
