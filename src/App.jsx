@@ -5,12 +5,16 @@ import Skills from '../components/Skills'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
+import { useTheme } from '../context/ThemeContext'
 
 const App = () => {
+  const {theme} = useTheme();
   return (
     <>
     <Navbar />
-    <div className='flex flex-col justify-center items-center'>
+    <div className={`
+      flex flex-col justify-center items-center ${theme === 'dark' ? 'bg-gray-300' : 'bg-white'}
+      `}>
       <Home />
       <Projects />
       <Skills />
@@ -22,3 +26,4 @@ const App = () => {
 }
 
 export default App
+// [#18181b]

@@ -1,11 +1,13 @@
-import { X, Menu, Sun } from 'lucide-react'
+import { X, Menu, Sun, MoonIcon } from 'lucide-react'
 import React, { useState } from 'react'
 import OpenMenu from './OpenMenu';
 import { motion, useScroll } from 'framer-motion';
 import logoLight from '../src/assets/logoLight.png'
+import { useTheme } from '../context/ThemeContext';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const {theme, toggleTheme} = useTheme();
   const {scrollYProgress} = useScroll();
 
   const handleMenuClick = () => {
@@ -19,7 +21,10 @@ const Navbar = () => {
     style={{scaleX : scrollYProgress}}
     className='h-1.5 rounded-r-2xl fixed z-1 w-full origin-left bg-green-600'></motion.div>
 
-    <nav className='flex bg-gray-100 justify-between fixed w-full pt-2 px-2 md:px-4 py-4 items-center opacity-90'>
+    <nav className={`
+      flex ${theme === 'dark' ? 'bg-gray-400' : 'bg-gray-100'} justify-between fixed w-full pt-2 px-2 md:px-4 py-4 items-center opacity-90
+      `}>
+
       <div>
         <img src={logoLight} alt="logo" className='h-10 rounded-3xl'/>
       </div>
@@ -30,14 +35,18 @@ const Navbar = () => {
         <a href='#skills'>Skills</a>
         <a href='#about'>About</a>
         <a href='#contact'>Contact</a>
-      
-        <Sun color='orange'/>
+
+        {
+          theme === 'dark' ? 
+          <Sun color='orange' className='cursor-pointer' onClick={toggleTheme}/>: 
+          <MoonIcon color='orange' className='cursor-pointer' onClick={toggleTheme}/>
+        }
       </div>
 
       <div className='lg:hidden cursor-pointer' onClick={handleMenuClick}>
         {
         isMenuOpen ? 
-         <X /> : 
+         <X/> : 
          <Menu/>
         }
       </div>
