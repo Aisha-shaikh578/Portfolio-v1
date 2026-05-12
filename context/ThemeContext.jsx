@@ -13,7 +13,7 @@ const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem('theme', theme);
-  })
+  },[theme])
 
   return(
     <ThemeContext.Provider value={{theme, toggleTheme}}>

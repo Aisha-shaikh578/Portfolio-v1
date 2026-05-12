@@ -1,19 +1,24 @@
 import { X, Menu, Sun, MoonIcon } from 'lucide-react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import OpenMenu from './OpenMenu';
 import { motion, useScroll } from 'framer-motion';
 import logoLight from '../src/assets/logoLight.png'
 import { useTheme } from '../context/ThemeContext';
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(
+    JSON.parse(localStorage.getItem('isMenuOpen')) || false
+  );
   const {theme, toggleTheme} = useTheme();
   const {scrollYProgress} = useScroll();
 
   const handleMenuClick = () => {
    setIsMenuOpen(!isMenuOpen);
   }
-  console.log(isMenuOpen)
+  
+  useEffect(() => {
+   localStorage.setItem('isMenuOpen', JSON.stringify(isMenuOpen));
+  },[isMenuOpen])
 
   return (
     <>
