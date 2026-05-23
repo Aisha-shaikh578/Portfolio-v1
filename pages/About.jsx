@@ -1,5 +1,5 @@
 import React from 'react'
-import LineBelow from './LineBelow'
+import LineBelow from '../components/LineBelow'
 import myPic from '../src/assets/my-pic.jpg'
 
 const About = () => {

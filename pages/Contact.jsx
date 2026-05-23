@@ -1,9 +1,9 @@
 import React from 'react'
-import LineBelow from './LineBelow'
+import LineBelow from '../components/LineBelow'
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
-import Footer from './Footer';
-import QRCode from './QRCode';
+import Footer from '../components/Footer';
+import QRCode from '../components/QRCode';
 
 const Contact = () => {
  const networkAccount = [

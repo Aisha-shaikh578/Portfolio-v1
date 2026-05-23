@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectObj from '../src/ProjectObj'
 import { FaGithub, FaLink } from 'react-icons/fa'
-import LineBelow from './LineBelow'
+import LineBelow from '../components/LineBelow'
 
 const Projects = () => {
   return (

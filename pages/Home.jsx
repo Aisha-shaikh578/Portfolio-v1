@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from './Button'
-import SocialIcons from './SocialIcons'
-import CodeEditor from './CodeEditor'
+import Button from '../components/Button'
+import SocialIcons from '../components/SocialIcons'
+import CodeEditor from '../components/CodeEditor'
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
       <div className='space-y-3 lg:w-2xl'>
         <h3 className='heading'>Hi, I'm</h3>
         <h1 className='name'>Aisha</h1>
-        <h3 className='heading'>Frontend Developer</h3>
+        <h3 className='heading'>Web Developer</h3>
         <p>I build responsive, scalable, and amazing web applications using modern front-end technologies.</p>
 
         <div className='flex gap-2 md:gap-3 mt-5 mb-5'>

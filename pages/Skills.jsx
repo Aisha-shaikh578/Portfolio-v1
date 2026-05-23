@@ -3,9 +3,10 @@ import { BsTypescript } from 'react-icons/bs'
 import { FaHtml5, FaJs, FaReact } from 'react-icons/fa'
 import { FaCss } from 'react-icons/fa6'
 import { FiGitBranch, FiGithub } from 'react-icons/fi'
-import { RiTailwindCssFill } from 'react-icons/ri'
+import { RiFirebaseLine, RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri'
 import { VscVscode } from 'react-icons/vsc'
-import LineBelow from './LineBelow'
+import LineBelow from '../components/LineBelow'
+import { WiThunderstorm } from 'react-icons/wi'
 
 const Skills = () => {
   return (
@@ -28,6 +29,7 @@ const Skills = () => {
           <div className='tech-logo'><FaHtml5 color='ff4800'/><h2 className='sm-text'>HTML</h2></div>
           <div className='tech-logo'><BsTypescript color='3385FF'/><h2 className='sm-text'>TypeScipt</h2></div>
           <div className='tech-logo'><RiTailwindCssFill color='66A3FF'/><h2 className='sm-text'>Tailwind</h2></div>
+          <div className='tech-logo'><RiNextjsFill color='black'/><h2 className='sm-text'>Next.js</h2></div>
         </div>
       </div>
 
@@ -43,7 +45,21 @@ const Skills = () => {
             <VscVscode color='0066FF'/><h2 className='sm-text'>VS Code</h2>
           </div>
           <div className='tech-logo'>
+            <WiThunderstorm color='#b18bba' className='rounded-br-xl rounded-bl-2xl rounded-tl-xl rounded-tr-2xl p-1'/><h2 className='sm-text'>Thunder Client</h2>
+          </div>
+          <div className='tech-logo'>
             <FiGitBranch color='white' className='bg-[#ff5400] rounded-br-xl rounded-bl-2xl rounded-tl-xl rounded-tr-2xl p-1'/><h2 className='sm-text'>Git</h2>
+          </div>
+        </div>
+      </div>
+
+      <div className='skills-div'>
+        <h2 className='heading font-extrabold text-xl'>
+          Backend
+        </h2>
+        <div className='text-4xl flex flex-wrap gap-5 text-center'>
+          <div className='tech-logo'>
+            <RiFirebaseLine color='#ff5400' className='bg-yellow-200 rounded-full px-1'/><h2 className='sm-text'>Firebase</h2>
           </div>
         </div>
       </div>
