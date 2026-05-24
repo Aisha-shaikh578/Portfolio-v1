@@ -4,6 +4,7 @@ import OpenMenu from './OpenMenu';
 import { motion, useScroll } from 'framer-motion';
 import logoLight from '../src/assets/logoLight.png'
 import { useTheme } from '../context/ThemeContext';
+import { HashLink } from 'react-router-hash-link/dist/react-router-hash-link.cjs.production';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(
@@ -26,7 +27,8 @@ const Navbar = () => {
     style={{scaleX : scrollYProgress}}
     className='h-1.5 rounded-r-2xl fixed z-60 w-full origin-left bg-green-600'></motion.div>
 
-    <nav className={`
+    <nav 
+    className={`
       flex ${theme === 'dark' ? 'bg-gray-400' : 'bg-gray-100'} justify-between fixed w-full pt-2 px-2 md:px-4 py-4 items-center opacity-90 z-50
       `}>
 
@@ -35,11 +37,11 @@ const Navbar = () => {
       </div>
 
       <div className='space-x-3 hidden lg:flex lg:gap-5'>
-        <a href='#home'>Home</a>
-        <a href='#projects'>Projects</a>
-        <a href='#skills'>Skills</a>
-        <a href='#about'>About</a>
-        <a href='#contact'>Contact</a>
+        <HashLink smooth to='/#home'>Home</HashLink>
+        <HashLink smooth to='/#projects'>Projects</HashLink>
+        <HashLink smooth to='/#skills'>Skills</HashLink>
+        <HashLink smooth to='/#about'>About</HashLink>
+        <HashLink smooth to='/#contact'>Contact</HashLink>
 
         {
           theme === 'dark' ? 
