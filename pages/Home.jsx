@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../components/Button'
 import SocialIcons from '../components/SocialIcons'
 import CodeEditor from '../components/CodeEditor'
+import { HashLink } from 'react-router-hash-link/dist/react-router-hash-link.cjs.production';
 
 const Home = () => {
   return (
@@ -13,7 +14,9 @@ const Home = () => {
         <p>I build responsive, scalable, and amazing web applications using modern front-end technologies.</p>
 
         <div className='flex gap-2 md:gap-3 mt-5 mb-5'>
-          <Button btnText={'View Projects'}/>
+          <HashLink className='hover:no-underline' smooth to='/#projects'>
+            <Button btnText={'View Projects'}/>
+          </HashLink>
           <Button btnText={'Resume'}/>
         </div>
        <SocialIcons />

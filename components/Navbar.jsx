@@ -32,9 +32,9 @@ const Navbar = () => {
       flex ${theme === 'dark' ? 'bg-gray-400' : 'bg-gray-100'} justify-between fixed w-full pt-2 px-2 md:px-4 py-4 items-center opacity-90 z-50
       `}>
 
-      <div>
+      <HashLink smooth to='/#home'>
         <img src={logoLight} alt="logo" className='h-10 rounded-3xl'/>
-      </div>
+      </HashLink>
 
       <div className='space-x-3 hidden lg:flex lg:gap-5'>
         <HashLink smooth to='/#home'>Home</HashLink>
