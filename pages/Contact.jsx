@@ -36,7 +36,7 @@ const Contact = () => {
     
     <div className='flex active:scale-95 flex-wrap gap-5 justify-center'>
       {networkAccount.map((acc,idx) => (
-      <a href={acc.url}>
+      <a href={acc.url} className='hover:no-underline'>
         <div key={idx} 
         className='border-2 flex gap-2 border-green-600 rounded px-2.5 py-1 hover:shadow-lg shadow-green-900/80  transition duration-300 ease-in-out hover:bg-green-900 hover:text-white hover:decoration-none'
         >

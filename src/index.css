@@ -95,4 +95,20 @@
     align-items: center;
     gap: 8px;
   }
+
+  .social-link{
+    transition: all .5s ease;
+  }
+
+  .tooltip{
+    display: none;
+  }
+
+  .social-link:hover .initial-icon{
+    display: none;
+  }
+
+  .social-link:hover .tooltip{
+    display: flex;
+  }
 }
