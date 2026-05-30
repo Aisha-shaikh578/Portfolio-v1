@@ -2,7 +2,6 @@ import React from 'react'
 import ProjectObj from '../src/ProjectObj'
 import { FaGithub, FaLink } from 'react-icons/fa'
 import LineBelow from '../components/LineBelow'
-import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion';
 
 const Projects = () => {
@@ -16,10 +15,8 @@ const Projects = () => {
 
     <motion.div 
     whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.95 }}
     className='flex flex-col md:flex-row gap-5 md:gap-10 flex-wrap justify-center'>
       {ProjectObj.map((project,idx) => (
-        <Link className='hover:no-underline' to={`/projects/${project.id}`}>
         <div key={idx} className='project-card'>
           <img src={project.image} alt={project.name} className='project-image' />
           <h3 className='title'>{project.name}</h3>
@@ -30,11 +27,10 @@ const Projects = () => {
             ))}
           </div>
            <div className='flex justify-between border-t-2 border-t-mist-300 pt-3 mt-3'>
-            {/* <a href={project.DemoLink}>Demo<span className='m-1'><FaLink /></span></a>
-            <a href={project.GitHubLink}>GitHub<span className='m-1'><FaGithub/></span></a> */}
+            <a href={project.DemoLink}>Demo<span className='m-1'><FaLink /></span></a>
+            <a href={project.GitHubLink}>GitHub<span className='m-1'><FaGithub/></span></a>
            </div>
         </div>
-        </Link>
        ))}
     </motion.div>
     </div>

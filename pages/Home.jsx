@@ -14,7 +14,7 @@ const Home = () => {
 
         <div className='flex gap-2 md:gap-3 mt-5 mb-5'>
           <Button btnText={'View Projects'}/>
-          <Button btnText={'Contact Me'}/>
+          <Button btnText={'Resume'}/>
         </div>
        <SocialIcons />
       </div>
