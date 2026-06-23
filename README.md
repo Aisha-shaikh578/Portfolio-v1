@@ -24,7 +24,7 @@ I am a frontend developer currently learning advanced concepts of React and buil
 ## Contact
 
 - Gmail: itsaishashaikh05@gmail.com
-- LinkedIn: https://linkedin.com/in/aisha-shaikh-098102405
+- LinkedIn: https://www.linkedin.com/in/aishashaikh05/
 - Instagram: https://www.instagram.com/build.with.fun/
 
 

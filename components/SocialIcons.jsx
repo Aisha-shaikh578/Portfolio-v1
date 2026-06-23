@@ -10,7 +10,7 @@ const SocialIcons = () => {
     name: 'Github'
   },
   {
-    url: "https://www.linkedin.com/in/aisha-shaikh-098102405/",
+    url: "https://www.linkedin.com/in/aishashaikh05/",
     icon : <FaLinkedin size={25} />,
     name: 'LinkedIn'
   },

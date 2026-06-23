@@ -18,7 +18,7 @@ const Contact = () => {
   },{
     icon: <FaLinkedin size={30}/>,
     name: 'LinkedIn',
-    url: "https://www.linkedin.com/in/aisha-shaikh-098102405/"
+    url: "https://www.linkedin.com/in/aishashaikh05/"
   },{
     icon: <MdEmail size={30}/>,
     name: 'Gmail',

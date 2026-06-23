@@ -3,7 +3,7 @@ import logoLight from '../src/assets/logoLight.png';
 import React from 'react'
 
 const QRCode = () => {
-  const websiteURL = 'https://www.linkedin.com/in/aisha-shaikh-098102405/';
+  const websiteURL = 'https://www.linkedin.com/in/aishashaikh05/';
 
   return (
     <div className='
