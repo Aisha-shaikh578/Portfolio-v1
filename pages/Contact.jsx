@@ -14,7 +14,7 @@ const Contact = () => {
   },{
     icon: <FaInstagram size={30}/>,
     name: 'Instagram',
-    url: "https://www.instagram.com/aisha_shaikh.dev?igdh=MTE1cnA2dDVhczM2cA==&utm_source=ig_contacr-invite"
+    url: "https://www.instagram.com/build.with.fun/"
   },{
     icon: <FaLinkedin size={30}/>,
     name: 'LinkedIn',
