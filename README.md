@@ -7,6 +7,7 @@ This is my personal portfolio website built using React and Tailwind CSS to show
 - React.js
 - Tailwind CSS
 - JavaScript (ES6+)
+- Framer motion (for animations)
 
 ## Features
 
@@ -24,7 +25,7 @@ I am a frontend developer currently learning advanced concepts of React and buil
 
 - Gmail: itsaishashaikh05@gmail.com
 - LinkedIn: https://linkedin.com/in/aisha-shaikh-098102405
-- Instagram: https://www.instagram.com/aisha_shaikh.dev?igdh=MTE1cnA2dDVhczM2cA==&utm_source=ig_contacr-invite
+- Instagram: https://www.instagram.com/build.with.fun/
 
 
 ## Future Improvements
