@@ -70,6 +70,8 @@
   .project-image{
     border-radius: 6px;
     margin-bottom: 5px;
+    height: 120px;
+    width: 100%;
   }
 
   .sm-text{

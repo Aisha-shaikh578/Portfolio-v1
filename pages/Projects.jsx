@@ -13,11 +13,12 @@ const Projects = () => {
         <LineBelow />
       </div>
 
-    <motion.div 
-    whileHover={{ scale: 1.1 }}
+    <div
     className='flex flex-col md:flex-row gap-5 md:gap-10 flex-wrap justify-center'>
       {ProjectObj.map((project,idx) => (
-        <div key={idx} className='project-card'>
+        <motion.div 
+        whileHover={{ scale: 1.05 }}
+        key={idx} className='project-card relative'>
           <img src={project.image} alt={project.name} className='project-image' />
           <h3 className='title'>{project.name}</h3>
           <p className='heading mb-5 mt-2'>{project.description}</p>
@@ -30,9 +31,9 @@ const Projects = () => {
             <a href={project.DemoLink}>Demo<span className='m-1'><FaLink /></span></a>
             <a href={project.GitHubLink}>GitHub<span className='m-1'><FaGithub/></span></a>
            </div>
-        </div>
+        </motion.div>
        ))}
-    </motion.div>
+    </div>
     </div>
   )
 }

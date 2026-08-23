@@ -3,7 +3,7 @@ import { BsTypescript } from 'react-icons/bs'
 import { FaHtml5, FaJs, FaReact } from 'react-icons/fa'
 import { FaCss } from 'react-icons/fa6'
 import { FiGitBranch, FiGithub } from 'react-icons/fi'
-import { RiFirebaseLine, RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri'
+import { RiFirebaseLine, RiNextjsFill, RiSupabaseLine, RiTailwindCssFill } from 'react-icons/ri'
 import { VscVscode } from 'react-icons/vsc'
 import LineBelow from '../components/LineBelow'
 import { WiThunderstorm } from 'react-icons/wi'
@@ -60,6 +60,9 @@ const Skills = () => {
         <div className='text-4xl flex flex-wrap gap-5 text-center'>
           <div className='tech-logo'>
             <RiFirebaseLine color='#ff5400' className='bg-yellow-200 rounded-full px-1'/><h2 className='sm-text'>Firebase</h2>
+          </div>
+          <div className='tech-logo'>
+            <RiSupabaseLine color='#037d50' className='bg-black rounded-full px-1'/><h2 className='sm-text'>Supabase</h2>
           </div>
         </div>
       </div>
