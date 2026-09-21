@@ -28,8 +28,8 @@ const Projects = () => {
             ))}
           </div>
            <div className='flex justify-between border-t-2 border-t-mist-300 pt-3 mt-3'>
-            <a href={project.DemoLink}>Demo<span className='m-1'><FaLink /></span></a>
-            <a href={project.GitHubLink}>GitHub<span className='m-1'><FaGithub/></span></a>
+            <a href={project.demoLink}>Demo<span className='m-1'><FaLink /></span></a>
+            <a href={project.gitHubLink}>GitHub<span className='m-1'><FaGithub/></span></a>
            </div>
         </motion.div>
        ))}

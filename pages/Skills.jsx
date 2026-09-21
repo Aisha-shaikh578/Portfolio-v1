@@ -22,7 +22,7 @@ const Skills = () => {
         <h2 className='heading font-extrabold text-xl'>
           Frontend
         </h2>
-        <div className='text-4xl flex flex-wrap gap-5 text-center'>
+        <div className='text-4xl flex flex-wrap gap-5 text-center justify-evenly'>
           <div className='tech-logo'><FaReact color='66A3FF'/><h2 className='sm-text'>React</h2></div>
           <div className='tech-logo'><FaJs color='ffd000'/><h2 className='sm-text'>JavaScript</h2></div>
           <div className='tech-logo'><FaCss color='0052CC'/><h2 className='sm-text'>CSS</h2></div>
@@ -37,7 +37,7 @@ const Skills = () => {
         <h2 className='heading font-extrabold text-xl'>
           Tools
         </h2>
-        <div className='text-4xl flex flex-wrap gap-5 text-center'>
+        <div className='text-4xl flex flex-wrap gap-5 text-center justify-evenly'>
           <div className='tech-logo'>
             <FiGithub color='white' className='bg-black rounded-2xl p-1'/><h2 className='sm-text'>GitHub</h2>
           </div>
@@ -57,7 +57,7 @@ const Skills = () => {
         <h2 className='heading font-extrabold text-xl'>
           Backend
         </h2>
-        <div className='text-4xl flex flex-wrap gap-5 text-center'>
+        <div className='text-4xl flex flex-wrap gap-5 text-center justify-evenly'>
           <div className='tech-logo'>
             <RiFirebaseLine color='#ff5400' className='bg-yellow-200 rounded-full px-1'/><h2 className='sm-text'>Firebase</h2>
           </div>
