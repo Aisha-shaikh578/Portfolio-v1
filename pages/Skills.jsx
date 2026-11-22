@@ -10,16 +10,16 @@ import { WiThunderstorm } from 'react-icons/wi'
 
 const Skills = () => {
   return (
-    <div id='skills' className='py-12 lg:py-15'>
-      <div className='text-center mb-6 mt-10'>
-        <h2 className='text-green-700 font-medium'>What I do</h2>
-        <h1 className='text-xl m-1 font-semibold'>Skills & Technologies </h1>
+    <div id='skills' className='py-12 lg:py-15 min-h-[95vh]'>
+      <div className='text-center mb-6 mt-15 lg:mt-16'>
+        <h2 className='text-green-700 font-bold mt-3 md:mt-6 text-lg xl:text-2xl'>What I do</h2>
+        <h1 className='text-2xl m-1 font-semibold font-[Allura] md:text-5xl mt-4'>Skills & Technologies </h1>
         <LineBelow />
       </div>
 
-    <div className='flex flex-col md:flex-row md:gap-10'>
-      <div className='skills-div'>
-        <h2 className='heading font-extrabold text-xl'>
+    <div className='flex flex-col md:flex-row md:gap-10 flex-wrap justify-center'>
+      <div className='skills-div shadow-lg shadow-emerald-950'>
+        <h2 className='heading font-extrabold text-xl lg:text-2xl'>
           Frontend
         </h2>
         <div className='text-4xl flex flex-wrap gap-5 text-center justify-evenly'>
@@ -33,8 +33,8 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className='skills-div'>
-        <h2 className='heading font-extrabold text-xl'>
+      <div className='skills-div shadow-lg shadow-emerald-950'>
+        <h2 className='heading font-extrabold text-xl lg:text-2xl'>
           Tools
         </h2>
         <div className='text-4xl flex flex-wrap gap-5 text-center justify-evenly'>
@@ -53,8 +53,8 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className='skills-div'>
-        <h2 className='heading font-extrabold text-xl'>
+      <div className='skills-div shadow-lg shadow-emerald-950'>
+        <h2 className='heading font-extrabold text-xl lg:text-2xl'>
           Backend
         </h2>
         <div className='text-4xl flex flex-wrap gap-5 text-center justify-evenly'>

@@ -15,7 +15,7 @@ const CodeEditor = () => {
 
   return (
     <div className='w-full' aria-label='Developer code preview'>
-      <div className='relative md:w-md 2xl:w-xl overflow-hidden -mx-2 rounded-2xl border border-[#315e45] bg-[#0b1510] shadow-[0_18px_45px_rgba(23,67,40,0.16)]'>
+      <div className='relative lg:w-md 2xl:w-xl overflow-hidden -mx-2 rounded-2xl border border-[#315e45] bg-[#0b1510] shadow-[0_18px_45px_rgba(23,67,40,0.16)]'>
         <div className='flex h-12 items-center justify-between border-b border-[#315e45] bg-[#143022] px-4'>
           <div className='flex gap-2'>
             <Circle color='#ff6b6b' fill='#ff6b6b' size={12}/>
