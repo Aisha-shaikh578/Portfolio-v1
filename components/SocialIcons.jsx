@@ -6,22 +6,22 @@ const SocialIcons = () => {
   const socialLinks = [
   {
     url: "https://github.com/Aisha-shaikh578",
-    icon : <FaGithub size={33} />,
+    icon : <FaGithub size={38} />,
     name: 'Github'
   },
   {
     url: "https://www.linkedin.com/in/aishashaikh05/",
-    icon : <FaLinkedin size={33} />,
+    icon : <FaLinkedin size={38} />,
     name: 'LinkedIn'
   },
   {
     url: "https://www.instagram.com/build.with.fun/",
-    icon : <FaInstagram size={33} />,
+    icon : <FaInstagram size={38} />,
     name: 'Instagram'
   },
   {
     url: 'mailto:itsaishashaikh05@gmail.com',
-    icon : <MdEmail size={33} />,
+    icon : <MdEmail size={38} />,
     name: 'Mail'
   }
 ]
