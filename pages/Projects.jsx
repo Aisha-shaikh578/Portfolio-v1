@@ -6,19 +6,19 @@ import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
-    <div id='projects' className='project-card-div'>
+    <div id='projects' className='project-card-div min-h-[95vh]'>
       <div className='text-center mb-4 py-4 lg:py-0'>
-        <h2 className='text-green-700 font-medium'>My Work</h2>
-        <h1 className='text-xl m-1 font-semibold'>Featured Projects</h1>
+        <h2 className='text-green-700 font-bold mt-3 md:mt-6 text-lg xl:text-2xl'>My Work</h2>
+        <h1 className='text-3xl m-1 mt-4 font-semibold font-[Allura] md:text-5xl'>Featured Projects</h1>
         <LineBelow />
       </div>
 
     <div
-    className='flex flex-col md:flex-row gap-5 md:gap-10 flex-wrap justify-center'>
+    className='flex flex-col md:flex-row gap-5 md:gap-10 flex-wrap'>
       {ProjectObj.map((project,idx) => (
         <motion.div 
         whileHover={{ scale: 1.05 }}
-        key={idx} className='project-card relative'>
+        key={idx} className='project-card relative shadow-lg shadow-emerald-950'>
           <img src={project.image} alt={project.name} className='project-image' />
           <h3 className='title'>{project.name}</h3>
           <p className='heading mb-5 mt-2'>{project.description}</p>
