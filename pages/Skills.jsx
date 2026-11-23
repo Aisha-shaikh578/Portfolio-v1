@@ -10,7 +10,7 @@ import { WiThunderstorm } from 'react-icons/wi'
 
 const Skills = () => {
   return (
-    <div id='skills' className='py-12 lg:py-15 min-h-[95vh]'>
+    <div id='skills' className='py-12 lg:py-15 min-h-[70vh]'>
       <div className='text-center mb-6 mt-15 lg:mt-16'>
         <h2 className='text-green-700 font-bold mt-3 md:mt-6 text-lg xl:text-2xl'>What I do</h2>
         <h1 className='text-2xl m-1 font-semibold font-[Allura] md:text-5xl mt-4'>Skills & Technologies </h1>

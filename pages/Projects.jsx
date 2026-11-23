@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
-    <div id='projects' className='project-card-div min-h-[95vh]'>
+    <div id='projects' className='project-card-div min-h-[70vh]'>
       <div className='text-center mb-4 py-4 lg:py-0'>
         <h2 className='text-green-700 font-bold mt-3 md:mt-6 text-lg xl:text-2xl'>My Work</h2>
         <h1 className='text-3xl m-1 mt-4 font-semibold font-[Allura] md:text-5xl'>Featured Projects</h1>

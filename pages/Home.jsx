@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <section
       id='home'
-      className={`w-full max-w-6xl 2xl:py-96 px-5 sm:px-8 lg:px-10 py-24 sm:py-28 lg:py-32 min-h-[95vh] mt-8 md:mt-20 text-[#173524]`}
+      className={`w-full max-w-6xl 2xl:py-96 px-5 sm:px-8 lg:px-10 py-24 sm:py-28 lg:py-32 min-h-[70vh] mt-8 md:mt-20 text-[#173524]`}
     >
       <div className='grid w-full items-center gap-12 md:grid-cols-2 lg:gap-14 xl:gap-20 2xl:gap-52'>
         <div className='max-w-3xl'>
