@@ -1,4 +1,4 @@
-import { X, Menu, Sun, MoonIcon } from 'lucide-react'
+import { Sun, MoonIcon } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import OpenMenu from './OpenMenu';
 import { motion, useScroll } from 'framer-motion';
@@ -109,11 +109,52 @@ const Navbar = () => {
       </div>
 
       <div className='lg:hidden cursor-pointer transition-all duration-75' onClick={handleMenuClick}>
-        {
-        isMenuOpen ? 
-         <X/> : 
-         <Menu/>
-        }
+        <motion.svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='24'
+          height='24'
+          viewBox='0 0 24 24'
+          fill='none'
+          stroke='currentColor'
+          strokeWidth='2'
+          strokeLinecap='round'
+          strokeLinejoin='round'
+        >
+          <motion.line
+            x1='4'
+            y1='6'
+            x2='20'
+            y2='6'
+            animate={{
+              x1: isMenuOpen ? 6 : 4,
+              y1: 6,
+              x2: isMenuOpen ? 18 : 20,
+              y2: isMenuOpen ? 18 : 6,
+            }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          />
+          <motion.line
+            x1='4'
+            y1='12'
+            x2='20'
+            y2='12'
+            animate={{ opacity: isMenuOpen ? 0 : 1 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          />
+          <motion.line
+            x1='4'
+            y1='18'
+            x2='20'
+            y2='18'
+            animate={{
+              x1: isMenuOpen ? 6 : 4,
+              y1: 18,
+              x2: isMenuOpen ? 18 : 20,
+              y2: isMenuOpen ? 6 : 18,
+            }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          />
+        </motion.svg>
       </div>
     </nav>
     {isMenuOpen ? <OpenMenu /> : null}

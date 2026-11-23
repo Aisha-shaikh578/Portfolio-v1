@@ -75,7 +75,7 @@ useEffect(() => {
   };
 
   return (
-    <div className={`${theme === 'dark' ? 'bg-gray-400' : 'bg-slate-100'} m-1.5 p-1 z-50 lg:hidden fixed mx-[3vw] items-center opacity-90 py-2.5 rounded mt-24 w-[94vw] md:w-[85vw] md:ml-15 transition-all`}>
+    <div className={`${theme === 'dark' ? 'bg-gray-400' : 'bg-slate-100'} m-1.5 p-1 z-50 lg:hidden fixed mx-[3vw] items-center opacity-90 py-2.5 rounded mt-24 w-[94vw] md:w-[85vw] md:ml-15 transition-all duration-300`}>
       <div className='flex justify-evenly text-center text-sm md:text-lg'>
       {navItems.map((item) => {
         const sectionId = item.toLowerCase();
