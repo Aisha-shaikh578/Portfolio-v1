@@ -11,11 +11,53 @@ const Navbar = () => {
     JSON.parse(localStorage.getItem('isMenuOpen')) || false
   );
   const {theme, toggleTheme} = useTheme();
+  const navItems=[
+    'Home',
+    'Projects',
+    'Skills',
+    'About',
+    'Contact'
+  ];
+  const [activeSection, setActiveSection] = useState('home');
   const {scrollYProgress} = useScroll();
 
   const handleMenuClick = () => {
    setIsMenuOpen(!isMenuOpen);
   }
+
+   useEffect(() => {
+    const sections = navItems.map((item) =>
+      document.getElementById(item.toLowerCase())
+    );
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+        rootMargin: "-100px 0px -50% 0px",
+        },
+    );
+
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, [navItems]);
+
+  const handleNavClick = (sectionId) => {
+    setActiveSection(sectionId);
+
+    document.getElementById(sectionId)?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   
   useEffect(() => {
    localStorage.setItem('isMenuOpen', JSON.stringify(isMenuOpen));
@@ -36,13 +78,29 @@ const Navbar = () => {
         <img src={logoLight} alt="logo" className='h-10 rounded-3xl mt-2'/>
       </HashLink>
 
-      <div className='space-x-3 hidden lg:flex lg:gap-5 text-xl'>
-        <HashLink smooth to='/#home'>Home</HashLink>
-        <HashLink smooth to='/#projects'>Projects</HashLink>
-        <HashLink smooth to='/#skills'>Skills</HashLink>
-        <HashLink smooth to='/#about'>About</HashLink>
-        <HashLink smooth to='/#contact'>Contact</HashLink>
+        {navItems.map((item) => {
+        const sectionId = item.toLowerCase();
+        const isActive = activeSection === sectionId;
 
+        return (
+          <button
+            key={item}
+            onClick={() => handleNavClick(sectionId)}
+            className={`relative pb-1 text-lg transition-colors hidden lg:flex font-semibold cursor-pointer 
+              ${isActive ? "text-emerald-800 font-medium" : "text-gray-600"}
+            `}
+          >
+            {item}
+
+            {isActive && (
+              <span className={`absolute left-1/2 -translate-x-1/2 bottom-0 h-0.5 w-1/2 rounded-full
+              bg-emerald-700 transition-all duration-300 ${isActive ? 'w-1/2 opacity-100' : 'w-0 opacity-0'}`}/>
+            )}
+          </button>
+        );
+      })}
+
+      <div className='space-x-3 hidden lg:flex lg:gap-5 text-xl'>
         {
           theme === 'dark' ? 
           <Sun color='#B16406' className='cursor-pointer' onClick={toggleTheme}/>: 
