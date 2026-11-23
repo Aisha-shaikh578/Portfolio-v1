@@ -32,7 +32,7 @@ const CodeEditor = () => {
           background: '#0B1510',
           margin: '0',
           padding: '26px 10px 20px 6px',
-          fontSize: 'clamp(0.9rem, 1.5vw, 0.9rem)',
+          fontSize: 'clamp(0.9rem, 2.1vw, 1.1rem)',
           minHeight: '260px',
           height: '260px',
           overflow: 'hidden'
