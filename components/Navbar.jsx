@@ -2,7 +2,7 @@ import { X, Menu, Sun, MoonIcon } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import OpenMenu from './OpenMenu';
 import { motion, useScroll } from 'framer-motion';
-import logoLight from '../src/assets/logoLight.png'
+import logoLight from '../src/assets/logoLight.jpeg'
 import { useTheme } from '../context/ThemeContext';
 import { HashLink } from 'react-router-hash-link/dist/react-router-hash-link.cjs.production';
 
@@ -33,7 +33,7 @@ const Navbar = () => {
       `}>
 
       <HashLink smooth to='/#home'>
-        <img src={logoLight} alt="logo" className='h-10 rounded-3xl'/>
+        <img src={logoLight} alt="logo" className='h-10 rounded-3xl mt-2'/>
       </HashLink>
 
       <div className='space-x-3 hidden lg:flex lg:gap-5'>

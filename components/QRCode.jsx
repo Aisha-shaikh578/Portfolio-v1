@@ -1,5 +1,5 @@
 import { QRCodeCanvas } from 'qrcode.react';
-import logoLight from '../src/assets/logoLight.png';
+import logoLight from '../src/assets/logoLight.jpeg';
 import React from 'react'
 
 const QRCode = () => {
@@ -7,7 +7,7 @@ const QRCode = () => {
 
   return (
     <div className='
-    bg-linear-to-br from-green-800 to-green-50 p-4 items-center relative flex flex-col rounded-lg shadow-lg shadow-green-900/80 
+    bg-linear-to-br from-green-800 to-green-50 py-5 px-0 items-center relative flex flex-col w-34 h-38 md:w-40 md:h-40 lg:w-44 lg:h-44 object-contain rounded-lg shadow-lg shadow-green-900/80 
     '>
       <QRCodeCanvas 
       value={websiteURL}
@@ -16,7 +16,7 @@ const QRCode = () => {
       bgColor='#e7f3eb'
       level='H'
       />
-      <h3 className='heading mt-2 -ml-2'>Scan to Connect</h3>
+      <h3 className='heading text-sm mt-2 md:mt-4 md:text-md lg:mt-6 lg:text-lg'>Scan to Connect</h3>
       <img src={logoLight} alt="logo" className='rounded-full absolute h-9 w-9 top-13 bg-white'/>
     </div>
   )
