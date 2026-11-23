@@ -29,14 +29,14 @@ const Navbar = () => {
 
     <nav 
     className={`
-      flex ${theme === 'dark' ? 'bg-gray-400' : 'bg-gray-100'} justify-between fixed w-full pt-2 px-2 md:px-4 py-4 items-center opacity-90 z-50
+      flex ${theme === 'dark' ? 'bg-gray-400' : 'bg-gray-100'} justify-between fixed rounded-full w-[90vw] px-5 mt-5 pt-2 ml-5 md:ml-10 lg:ml-12 xl:ml-17 2xl:ml-30 md:px-6 lg:px-6 py-2 items-center opacity-90 z-50
       `}>
 
       <HashLink smooth to='/#home'>
         <img src={logoLight} alt="logo" className='h-10 rounded-3xl mt-2'/>
       </HashLink>
 
-      <div className='space-x-3 hidden lg:flex lg:gap-5'>
+      <div className='space-x-3 hidden lg:flex lg:gap-5 text-xl'>
         <HashLink smooth to='/#home'>Home</HashLink>
         <HashLink smooth to='/#projects'>Projects</HashLink>
         <HashLink smooth to='/#skills'>Skills</HashLink>
@@ -50,7 +50,7 @@ const Navbar = () => {
         }
       </div>
 
-      <div className='lg:hidden cursor-pointer' onClick={handleMenuClick}>
+      <div className='lg:hidden cursor-pointer transition-all duration-75' onClick={handleMenuClick}>
         {
         isMenuOpen ? 
          <X/> : 
